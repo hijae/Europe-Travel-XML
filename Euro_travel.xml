@@ -5,9 +5,26 @@
         <city country="프랑스">파리</city>
         <year>1889</year>
         <buillder>구스타프 에펠</buillder>
-        <picture file = "Eiffel_Tour1.jpg" w = "1000" h = "300"/>
-        <picture file = "Eiffel_Tour2.jpg" w = "500" h="350"/>
-        <story>&eiffel_story</story>
+        <picture1 file = "Eiffel_Tour1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Eiffel_Tour2.jpg" w = "500" h="350"/>
+        <story>&eiffel_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>베르사유 궁전</name>
+        <city country="프랑스">베르사유</city>
+        <year>1680년대</year>
+        <buillder>앙드레 르 노트르</buillder>
+        <picture1 file = "Versailles1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Versailles2.jpg" w = "500" h="350"/>
+        <story>&versailles;</story>
+    </travel>
+    <travel select="자연">
+        <name>센강</name>
+        <city country="프랑스">파리</city>
+        <place latitude = "북위 48° 92′ 20" longitude= "동경 02° 12′ 32"/>
+        <picture1 file = "Seine1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Seine2.jpg" w = "500" h="350"/>
+        <story>&Seine;</story>
     </travel>
     <travel select = "건물">
         <name>쾰른 대성당</name>
@@ -16,7 +33,24 @@
         <buillder>게르하르트 폰 릴레</buillder>
         <picture file = "Cologne_Cathedral.jpg" w = "1000" h = "300"/>
         <picture file = "Cologne_Cathedral2.jpg" w = "500" h="350"/>
-        <story>&cologne_story</story>
+        <story>&cologne_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>아헨 대성당</name>
+        <city country="독일">아헨</city>
+        <year>796년</year>
+        <buillder>오도 오브 메츠</buillder>
+        <picture1 file = "Aachener1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Aachener2.jpg" w = "500" h="350"/>
+        <story>&aachener;</story>
+    </travel>
+    <travel select="자연">
+        <name>튀빙엔</name>
+        <city country="독일">튀빙엔</city>
+        <place latitude = "북위 48° 52′ 36" longitude= "동경 9° 05′ 63"/>
+        <picture1 file = "Tubingen1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Tubingen2.jpg" w = "500" h="350"/>
+        <story>&tubingen;</story>
     </travel>
     <travel select = "건물">
         <name>파르테논 신전</name>
@@ -25,7 +59,7 @@
         <buillder>페이디아스</buillder>
         <picture file = "Parthenon1.jpg" w = "1000" h = "300"/>
         <picture file = "Parthenon2.jpg" w = "500" h="350"/>
-        <story>&parthenon_story</story>
+        <story>&parthenon_story;</story>
     </travel>
     <travel select = "자연">
         <name>알프스 산</name>
@@ -33,7 +67,7 @@
         <place latitude = "북위 45° 50′ 01" longitude= "동경 06° 51′ 54"/>
         <picture file = "Alpes1.jpg" w = "1000" h = "300"/>
         <picture file = "Alpes2.jpg" w = "500" h="350"/>
-        <story>&alpes_story</story>
+        <story>&alpes_story;</story>
     </travel>
     <travel select = "건물">
         <name>빅벤</name>
@@ -42,6 +76,6 @@
         <buillder>찰스베리</buillder>
         <picture file = "Big_Ben1.jpg" w = "1000" h = "300"/>
         <picture file = "Big_Ben2.jpg" w = "500" h="350"/>
-        <story>&big_ben_story</story>
+        <story>&big_ben_story;</story>
     </travel>
 </Europe>
