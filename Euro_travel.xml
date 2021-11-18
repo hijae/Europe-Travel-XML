@@ -35,6 +35,23 @@
         <picture file = "Cologne_Cathedral2.jpg" w = "500" h="350"/>
         <story>&cologne_story;</story>
     </travel>
+    <travel select="건물">
+        <name>아헨 대성당</name>
+        <city country="독일">아헨</city>
+        <year>796년</year>
+        <buillder>오도 오브 메츠</buillder>
+        <picture1 file = "Aachener1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Aachener2.jpg" w = "500" h="350"/>
+        <story>&aachener;</story>
+    </travel>
+    <travel select="자연">
+        <name>튀빙엔</name>
+        <city country="독일">튀빙엔</city>
+        <place latitude = "북위 48° 52′ 36" longitude= "동경 9° 05′ 63"/>
+        <picture1 file = "Tubingen1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Tubingen2.jpg" w = "500" h="350"/>
+        <story>&tubingen;</story>
+    </travel>
     <travel select = "건물">
         <name>파르테논 신전</name>
         <city country="그리스">아테네</city>
