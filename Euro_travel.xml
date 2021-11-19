@@ -16,7 +16,7 @@
         <buillder>앙드레 르 노트르</buillder>
         <picture1 file = "Versailles1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Versailles2.jpg" w = "500" h="350"/>
-        <story>&versailles;</story>
+        <story>&versailles_story;</story>
     </travel>
     <travel select="자연">
         <name>센강</name>
@@ -24,7 +24,7 @@
         <place latitude = "북위 48° 92′ 20″" longitude= "동경 02° 12′ 32″"/>
         <picture1 file = "Seine1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Seine2.jpg" w = "500" h="350"/>
-        <story>&Seine;</story>
+        <story>&seine_story;</story>
     </travel>
     <travel select = "건물">
         <name>쾰른 대성당</name>
@@ -42,7 +42,7 @@
         <buillder>오도 오브 메츠</buillder>
         <picture1 file = "Aachener1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Aachener2.jpg" w = "500" h="350"/>
-        <story>&aachener;</story>
+        <story>&aachener_story;</story>
     </travel>
     <travel select="자연">
         <name>튀빙엔 마을</name>
@@ -75,7 +75,7 @@
         <place latitude = "북위 38° 28′ 53″" longitude= " 동경 22° 29′ 46″"/>
         <picture1 file = "Delphi1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Delphi2.jpg" w = "500" h="350"/>
-        <story>&delphi;</story>
+        <story>&delphi_story;</story>
     </travel>
     <travel select = "자연">
         <name>알프스 산</name>
@@ -92,7 +92,7 @@
         <buillder>찰스베리</buillder>
         <picture1 file = "Big_Ben1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Big_Ben2.jpg" w = "500" h="350"/>
-        <story>&bigben;</story>
+        <story>&big_ben_story;</story>
     </travel>
     <travel select="건물">
         <name>런던 아이</name>
@@ -101,7 +101,7 @@
         <buillder>줄리아 바필드</buillder>
         <picture1 file = "Londoneye1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Londoneye2.jpg" w = "500" h="350"/>
-        <story>&londoneye;</story>
+        <story>&london_eye_story;</story>
     </travel>
     <travel select="건물">
         <name>대영박물관</name>
@@ -110,6 +110,6 @@
         <buillder>로버트 스머크</buillder>
         <picture1 file = "britishmuseum1.jpg" w = "1000" h = "300"/>
         <picture2 file = "britishmuseum2.jpg" w = "500" h="350"/>
-        <story>&britishmuseum;</story>
+        <story>&british_museum_story;</story>
     </travel>
 </Europe>
