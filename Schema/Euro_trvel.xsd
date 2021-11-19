@@ -1,0 +1,49 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Europe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "travel" minOccurs="1" maxOccurs="unbounded" >
+                    <xs:complexType>
+                        <xs:attribute name = "select">
+                            <xs:simpleType>
+                               <xs:restriction base = "xs:string">
+                                <xs:enumeration value="건물"/>
+                                <xs:enumeration value="자연"/>
+                               </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name = "name" type="xs:string"/>
+                <xs:element name = "city" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:attribute name = "country">
+                            <xs:simpleType>
+                               <xs:restriction base = "xs:string">
+                                <xs:enumeration value="그리스"/>
+                                <xs:enumeration value="알프스 7개국"/>
+                                <xs:enumeration value="독일"/>
+                                <xs:enumeration value="프랑스"/>
+                                <xs:enumeration value="영국"/>                              
+                               </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:element name = "year" type="xs:int"/>
+                        <xs:element name = "buillder" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:element name = "place" type="xs:int">
+                        <xs:complexType>
+                            <xs:attribute name = "latitude" type="xs:string" />
+                            <xs:attribute name = "longitude" type="xs:string" />
+                        </xs:complexType>
+                        <!-- 사진속성추가 place수정-->
+                    </xs:element>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
