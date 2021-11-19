@@ -16,7 +16,7 @@
         <buillder>앙드레 르 노트르</buillder>
         <picture1 file = "Versailles1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Versailles2.jpg" w = "500" h="350"/>
-        <story>&versailles;</story>
+        <story>&versailles_story;</story>
     </travel>
     <travel select="자연">
         <name>센강</name>
@@ -24,7 +24,7 @@
         <place latitude = "북위 48° 92′ 20" longitude= "동경 02° 12′ 32"/>
         <picture1 file = "Seine1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Seine2.jpg" w = "500" h="350"/>
-        <story>&Seine;</story>
+        <story>&seine_story;</story>
     </travel>
     <travel select = "건물">
         <name>쾰른 대성당</name>
@@ -42,7 +42,7 @@
         <buillder>오도 오브 메츠</buillder>
         <picture1 file = "Aachener1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Aachener2.jpg" w = "500" h="350"/>
-        <story>&aachener;</story>
+        <story>&aachener_story;</story>
     </travel>
     <travel select="자연">
         <name>튀빙엔</name>
@@ -50,7 +50,7 @@
         <place latitude = "북위 48° 52′ 36" longitude= "동경 9° 05′ 63"/>
         <picture1 file = "Tubingen1.jpg" w = "1000" h = "300"/>
         <picture2 file = "Tubingen2.jpg" w = "500" h="350"/>
-        <story>&tubingen;</story>
+        <story>&tubingen_story;</story>
     </travel>
     <travel select = "건물">
         <name>파르테논 신전</name>
@@ -60,6 +60,22 @@
         <picture file = "Parthenon1.jpg" w = "1000" h = "300"/>
         <picture file = "Parthenon2.jpg" w = "500" h="350"/>
         <story>&parthenon_story;</story>
+    </travel>
+    <travel select="자연">
+        <name>산토리니섬</name>
+        <city country="그리스">에게 해</city>
+        <place latitude = "북위 36° 25′ 2″" longitude= " 동경 25° 25′ 9″"/>
+        <picture1 file = "Santorini1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Santorini2.jpg" w = "500" h="350"/>
+        <story>&santorini_story;</story>
+    </travel>
+    <travel select = "자연">
+        <name>델포이 고고 유적</name>
+        <city country="그리스">델포이</city>
+        <place latitude = "북위 38° 28′ 53″" longitude= " 동경 22° 29′ 46″"/>
+        <picture1 file = "Delphi1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Delphi2.jpg" w = "500" h="350"/>
+        <story>&delphi_story;</story>
     </travel>
     <travel select = "자연">
         <name>알프스 산</name>
@@ -74,8 +90,26 @@
         <city country="영국">런던</city>
         <year>1859년</year>
         <buillder>찰스베리</buillder>
-        <picture file = "Big_Ben1.jpg" w = "1000" h = "300"/>
-        <picture file = "Big_Ben2.jpg" w = "500" h="350"/>
+        <picture1 file = "Big_Ben1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Big_Ben2.jpg" w = "500" h="350"/>
         <story>&big_ben_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>런던 아이</name>
+        <city country="영국">런던</city>
+        <year>2000년</year>
+        <buillder>줄리아 바필드</buillder>
+        <picture1 file = "Londoneye1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Londoneye2.jpg" w = "500" h="350"/>
+        <story>&london_eye_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>대영박물관</name>
+        <city country="영국">런던</city>
+        <year>1753년</year>
+        <buillder>로버트 스머크</buillder>
+        <picture1 file = "britishmuseum1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "britishmuseum2.jpg" w = "500" h="350"/>
+        <story>&british_museum_story;</story>
     </travel>
 </Europe>
