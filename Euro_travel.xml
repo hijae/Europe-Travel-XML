@@ -81,17 +81,35 @@
         <name>알프스 산</name>
         <city country="알프스 7개국">프랑스, 스위스, 이탈리아, 오스트리아, 독일, 슬로배니아, 리히텐슈타인</city>
         <place latitude = "북위 45° 50′ 01″" longitude= "동경 06° 51′ 54″"/>
-        <picture file = "Alpes1.jpg" w = "1000" h = "300"/>
-        <picture file = "Alpes2.jpg" w = "500" h="350"/>
-        <story>&alpes_story;</story>
+        <picture1 file = "Alpes1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Alpes2.jpg" w = "500" h="350"/>
+        <story>&alpes;</story>
     </travel>
     <travel select = "건물">
         <name>빅벤</name>
         <city country="영국">런던</city>
         <year>1859년</year>
         <buillder>찰스베리</buillder>
-        <picture file = "Big_Ben1.jpg" w = "1000" h = "300"/>
-        <picture file = "Big_Ben2.jpg" w = "500" h="350"/>
-        <story>&big_ben_story;</story>
+        <picture1 file = "Big_Ben1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Big_Ben2.jpg" w = "500" h="350"/>
+        <story>&bigben;</story>
+    </travel>
+    <travel select="건물">
+        <name>런던 아이</name>
+        <city country="영국">런던</city>
+        <year>2000년</year>
+        <buillder>줄리아 바필드</buillder>
+        <picture1 file = "Londoneye1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Londoneye2.jpg" w = "500" h="350"/>
+        <story>&londoneye;</story>
+    </travel>
+    <travel select="건물">
+        <name>대영박물관</name>
+        <city country="영국">런던</city>
+        <year>1753년</year>
+        <buillder>로버트 스머크</buillder>
+        <picture1 file = "britishmuseum1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "britishmuseum2.jpg" w = "500" h="350"/>
+        <story>&britishmuseum;</story>
     </travel>
 </Europe>
