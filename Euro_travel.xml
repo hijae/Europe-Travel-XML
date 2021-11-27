@@ -112,4 +112,30 @@
         <picture2 file = "britishmuseum2.jpg" w = "500" h="350"/>
         <story>&british_museum_story;</story>
     </travel>
+    <travel select="건물">
+        <name>타워 브릿지</name>
+        <city country="영국">런던</city>
+        <year>1894년</year>
+        <buillder>호레이스 존스</buillder>
+        <picture1 file = "towerbridge1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "towerbridge2.jpg" w = "500" h="350"/>
+        <story>&tower_bridge_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>스톤헨지</name>
+        <city country="영국">런던</city>
+        <year>기원전 2000년</year>
+        <buillder>윈드밀힐 문화인</buillder>
+        <picture1 file = "stonhenge1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "stonhenge2.jpg" w = "500" h="350"/>
+        <story>&stone_henge_story;</story>
+    </travel>
+    <travel select="자연">
+        <name>레이크 디스트릭스</name>
+        <city country="영국">잉글랜드</city>
+        <place latitude = "북위 54° 57′ 51″" longitude= " 동경 -3° 14′ 54″"/>
+        <picture1 file = "lakedistrict1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "lakedistrict2.jpg" w = "500" h="350"/>
+        <story>&lake_district_story;</story>
+    </travel>
 </Europe>
