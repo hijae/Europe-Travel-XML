@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html" />
     <xsl:template match="/">
-        <link rel="stylesheet" type="text/css" href="maintable.css"/>
+        <link rel="stylesheet" type="text/css" href="maintable.css" />
         <html>
             <head>
                 <title>
@@ -39,24 +38,47 @@
                             <td>
                                 <img>
                                     <xsl:attribute name="src">
-                                        <xsl:value-of select="picture1/@file" />
+                                        <xsl:value-of select="../picture1/@file" />
                                     </xsl:attribute>
                                     <xsl:attribute name="width">
-                                        <xsl:value-of select="picture1/@w" />
+                                        <xsl:value-of select="../picture1/@w" />
                                     </xsl:attribute>
                                     <xsl:attribute name="height">
-                                        <xsl:value-of select="picture1/@h" />
+                                        <xsl:value-of select="../picture1/@h" />
                                     </xsl:attribute>
                                 </img>
-                    image
-                                <br/>
+                                image
+                                <br />
                                 <xsl:value-of select="../name" />
-                                <br/>
+                                <br />
                                 <xsl:value-of select="../city" />
                             </td>
                         </tr>
                     </xsl:for-each>
                 </table>
+                <h3>
+                    그 외 추천 여행지
+                </h3>
+                <div id="mainimg">
+                    <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                        <img>
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="picture1/@file" />
+                            </xsl:attribute>
+                            <xsl:attribute name="width">
+                                <xsl:value-of select="picture1/@w" />
+                            </xsl:attribute>
+                            <xsl:attribute name="height">
+                                <xsl:value-of select="picture1/@h" />
+                            </xsl:attribute>
+                        </img>
+                        image
+                        <br />
+                        <xsl:value-of select="name" />
+                        <br />
+                        <xsl:value-of select="city" />
+                    </xsl:for-each>
+                </div>
             </body>
         </html>
     </xsl:template>
