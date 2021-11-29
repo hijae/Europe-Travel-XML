@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="main.xsl" type="text/xsl"?>
-<web>
+<web xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema/Euro_trvel.xsd">
 <Europe>
     <travel select = "건물">
         <name>에펠탑</name>
