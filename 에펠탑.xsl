@@ -104,6 +104,29 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
+                <h3>
+                    이런 여행지는 어떠세요?
+                </h3>
+                <div id="maintable">
+                    <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                        <img>
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="picture1/@file" />
+                            </xsl:attribute>
+                            <xsl:attribute name="width">
+                                <xsl:value-of select="picture1/@w" />
+                            </xsl:attribute>
+                            <xsl:attribute name="height">
+                                <xsl:value-of select="picture1/@h" />
+                            </xsl:attribute>
+                        </img>
+                        image
+                        <br />
+                        <xsl:value-of select="name" />
+                        <br />
+                        <xsl:value-of select="city" />
+                    </xsl:for-each>
+                </div>
             </body>
         </html>
     </xsl:template>

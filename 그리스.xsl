@@ -59,7 +59,7 @@
                 <h3>
                     그 외 추천 여행지
                 </h3>
-                <div id="mainimg">
+                <div id="maintable">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                         <img>
                             <xsl:attribute name="src">
