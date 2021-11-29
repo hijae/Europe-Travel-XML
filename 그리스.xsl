@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html" />
     <xsl:template match="/">
-        <link rel="stylesheet" type="text/css" href="maintable.css"/>
+        <link rel="stylesheet" type="text/css" href="maintable.css" />
         <html>
             <head>
                 <title>
@@ -30,11 +29,10 @@
                         </li>
                     </ul>
                 </nav>
-                <h2>
-                    그리스 추천 여행지
-                </h2>
-                <table id="maintable">
-                    <xsl:for-each select="web/Europe/travel/city[@country = '그리스']">
+                <xsl:for-each select="web/Europe/travel/city[@country = '그리스']">
+                    <h2><xsl:value-of select="city/@country" /> 추천 여행지
+                    </h2>
+                    <table id="maintable">
                         <tr>
                             <td>
                                 <img>
@@ -48,15 +46,15 @@
                                         <xsl:value-of select="picture1/@h" />
                                     </xsl:attribute>
                                 </img>
-                    image
-                                <br/>
+                                image
+                                <br />
                                 <xsl:value-of select="../name" />
-                                <br/>
+                                <br />
                                 <xsl:value-of select="../city" />
                             </td>
                         </tr>
-                    </xsl:for-each>
-                </table>
+                    </table>
+                </xsl:for-each>
             </body>
         </html>
     </xsl:template>
