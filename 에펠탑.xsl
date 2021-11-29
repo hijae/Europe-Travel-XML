@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </nav>
-                <xsl:for-each select="web/Europe/travel[name='센강']">
+                <xsl:for-each select="web/Europe/travel[name='에펠탑']">
                     <xsl:choose>
                         <xsl:when test="@select='건물'">
                             <h2>
