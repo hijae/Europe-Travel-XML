@@ -10,9 +10,9 @@
                 </title>
             </head>
             <body>
-                <h1 href="./Euro_travel.xml">
-유럽 추천 여행지
-                </h1>
+                <h1><a  href="Euro_travel.xml">
+                    유럽 추천 여행지
+                                    </a></h1>
                 <nav id="topMenu">
                     <ul>
                         <li>
@@ -36,6 +36,8 @@
                     <xsl:for-each select="web/Europe/travel/city[@country = '그리스']">
                         <tr>
                             <td>
+                                <a>
+                                    <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                                 <img>
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="../picture1/@file" />
@@ -52,6 +54,7 @@
                                 <xsl:value-of select="../name" />
                                 <br />
                                 <xsl:value-of select="../city" />
+                                </a>
                             </td>
                         </tr>
                     </xsl:for-each>
@@ -62,6 +65,8 @@
                 </h3>
                 <div id="maintable">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                    <a>
+                        <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                         <img>
                             <xsl:attribute name="src">
                                 <xsl:value-of select="picture1/@file" />
@@ -78,6 +83,7 @@
                         <xsl:value-of select="name" />
                         <br />
                         <xsl:value-of select="city" />
+                        </a>
                     </xsl:for-each>
                 </div>
             </body>

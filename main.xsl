@@ -11,9 +11,9 @@
                 </title>
             </head>
             <body>
-                <h1 href="./Euro_travel.xml">
+                <h1><a href="Euro_travel.xml">
 유럽 추천 여행지
-                </h1>
+                </a></h1>
                 <nav id="topMenu">
                     <ul>
                         <li>
@@ -32,10 +32,9 @@
                 </nav>
                 <div id="mainimg">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                    <a>
+                        <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                         <img>
-                            <xsl:attribute name="href">
-                                ./<xsl:value-of select="name" />.xml
-                            </xsl:attribute>
                             <xsl:attribute name="src">
                                 <xsl:value-of select="picture1/@file" />
                             </xsl:attribute>
@@ -47,6 +46,7 @@
                             </xsl:attribute>
                         </img>
                     image
+                    </a>
                     </xsl:for-each>
                 </div>
                 <h2>
@@ -56,8 +56,9 @@
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                         <tr>
                             <td>
+                                <a>
+                                    <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                                 <img>
-                                    <xsl:attribute name="href">./<xsl:value-of select="name" />.xml</xsl:attribute>
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="picture1/@file" />
                                     </xsl:attribute>
@@ -73,6 +74,7 @@
                                 <xsl:value-of select="name" />
                                 <br/>
                                 <xsl:value-of select="city" />
+                            </a>
                             </td>
                         </tr>
                     </xsl:for-each>
