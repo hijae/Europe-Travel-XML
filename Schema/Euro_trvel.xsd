@@ -1,49 +1,82 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="Europe">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name = "travel" minOccurs="1" maxOccurs="unbounded" >
-                    <xs:complexType>
-                        <xs:attribute name = "select">
-                            <xs:simpleType>
-                               <xs:restriction base = "xs:string">
-                                <xs:enumeration value="건물"/>
-                                <xs:enumeration value="자연"/>
-                               </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name = "name" type="xs:string"/>
-                <xs:element name = "city" minOccurs="1" maxOccurs="1">
-                    <xs:complexType>
-                        <xs:attribute name = "country">
-                            <xs:simpleType>
-                               <xs:restriction base = "xs:string">
-                                <xs:enumeration value="그리스"/>
-                                <xs:enumeration value="알프스 7개국"/>
-                                <xs:enumeration value="독일"/>
-                                <xs:enumeration value="프랑스"/>
-                                <xs:enumeration value="영국"/>                              
-                               </xs:restriction>
-                            </xs:simpleType>
-                        </xs:attribute>
-                    </xs:complexType>
-                </xs:element>
-                <xs:choice>
-                    <xs:sequence>
-                        <xs:element name = "year" type="xs:int"/>
-                        <xs:element name = "buillder" type="xs:string"/>
-                    </xs:sequence>
-                    <xs:element name = "place" type="xs:int">
-                        <xs:complexType>
-                            <xs:attribute name = "latitude" type="xs:string" />
-                            <xs:attribute name = "longitude" type="xs:string" />
-                        </xs:complexType>
-                        <!-- 사진속성추가 place수정-->
-                    </xs:element>
-                </xs:choice>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="web">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Europe"/>
+        <xs:element ref="reviews"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Europe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="travel" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="reviews">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="review" minOccurs="3" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="travel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element ref="city"/>
+        <xs:element name="year" type="xs:string" minOccurs="0" />
+        <xs:element name="buillder" type="xs:string" minOccurs="0"/>
+        <xs:element ref="place" minOccurs="0"/>
+        <xs:element ref="picture1"/>
+        <xs:element ref="picture2"/>
+        <xs:element name="story" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="select">
+          <xs:simpleType>
+              <xs:restriction base="xs:string">
+                  <xs:enumeration value="자연"/>
+                  <xs:enumeration value="건물"/>
+              </xs:restriction>
+          </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city">
+    <xs:complexType mixed="true">
+      <xs:attribute name="country" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="picture1">
+    <xs:complexType>
+      <xs:attribute name="file" type="xs:string" use="required"/>
+      <xs:attribute name="h" type="xs:string" use="required"/>
+      <xs:attribute name="w" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="picture2">
+    <xs:complexType>
+      <xs:attribute name="file" type="xs:string" use="required"/>
+      <xs:attribute name="h" type="xs:string" use="required"/>
+      <xs:attribute name="w" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="place">
+    <xs:complexType>
+      <xs:attribute name="latitude" type="xs:string" use="required"/>
+      <xs:attribute name="longitude" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="review">
+    <xs:complexType>
+      <xs:sequence>
+          <xs:element name="id"/>
+          <xs:element name="name"/>
+          <xs:element name="text"/>
+          <xs:element name="travel"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
