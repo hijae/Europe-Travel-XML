@@ -10,22 +10,22 @@
                 </title>
             </head>
             <body>
-                <h1>
+                <h1 href="./Euro_travel.xml">
 유럽 추천 여행지
                 </h1>
                 <nav id="topMenu">
                     <ul>
                         <li>
-                            <a class="menuLink" href="#">그리스</a>
+                            <a class="menuLink" href="./그리스.xml">그리스</a>
                         </li>
                         <li>
-                            <a class="menuLink" href="#">영국</a>
+                            <a class="menuLink" href="./영국.xml">영국</a>
                         </li>
                         <li>
-                            <a class="menuLink" href="#">프랑스</a>
+                            <a class="menuLink" href="./프랑스.xml">프랑스</a>
                         </li>
                         <li>
-                            <a class="menuLink" href="#">독일</a>
+                            <a class="menuLink" href="./독일.xml">독일</a>
                         </li>
                     </ul>
                 </nav>
