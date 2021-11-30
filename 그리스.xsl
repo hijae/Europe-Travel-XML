@@ -56,6 +56,7 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                <hr/>
                 <h3>
                     그 외 추천 여행지
                 </h3>

@@ -73,6 +73,7 @@
                         </tr>
                     </xsl:for-each>
                 </table>
+                <hr/>
                 <h2>
                     Best 리뷰
                 </h2>

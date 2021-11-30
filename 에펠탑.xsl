@@ -104,6 +104,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
+                <hr/>
                 <h3>
                     이런 여행지는 어떠세요?
                 </h3>
