@@ -165,6 +165,12 @@
                 </div>
                 </div>
             </body>
+            <footer>
+                <div style="float:left;">
+                <p align="left"><img src="ui/main.jpg" width="30" height="30"/>©Todos los derechos reservados</p>
+                </div>
+                <div style="float:right;"><a href="mailto:?subject=유럽여행"><img src="ui/mail.jpg" width="30" height="30"/></a><a href="http://facebook.com"><img src="ui/facebook.jpg" width="30" height="30"/></a><a href="https://twitter.com/" target="_blank"><img src="ui/twitter.jpg" width="30" height="30"/></a><a href="https://www.instagram.com/" target="_blank"><img src="ui/insta.jpg" width="30" height="30"/></a></div>
+            </footer>
         </html>
     </xsl:template>
 </xsl:stylesheet>

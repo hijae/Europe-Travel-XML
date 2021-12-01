@@ -72,3 +72,8 @@ img {
 #h1head{
         color: white;
 }
+footer {
+        margin: 0 auto;
+        width: 90%;
+        background-color: #505050;
+}
