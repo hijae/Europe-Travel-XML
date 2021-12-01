@@ -16,7 +16,7 @@
         text-decoration:none;
         color: white;
         display: block;
-        width: 230px;
+        width: 240px;
         font-size: 12px;
         font-weight: bold;
         font-family: "Trebuchet MS", Dotum, Arial;
@@ -40,12 +40,12 @@ h1{
         text-align: center;
 }
 #subimg{
-        width: 100px;
+        width: 200px;
         height: auto;
 }
 #mainimg{
-        width: 300px;
-        height: auto;
+        width: auto;
+        height: 270px;
 }
 #scrimg{
         width: auto;
@@ -54,4 +54,7 @@ h1{
 
 #maintable{
         border-spacing: 20px;
+}
+img {
+        border-radius: 4px;
 }

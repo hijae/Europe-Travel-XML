@@ -11,7 +11,7 @@
                 </title>
             </head>
             <body>
-                <h1><a  href="Euro_travel.xml">
+                <h1><a href="Euro_travel.xml"><img src="ui/main.jpg" width="50" height="50" />
                     유럽 추천 여행지
                                     </a></h1>
                 <nav id="topMenu">
@@ -71,10 +71,10 @@
                                     </p></td>
                                   </tr>
                                   <tr>
-                                    <td><div style="border :1px solid black; padding 10px;" id="subimg">이미지를 준비중입니다.</div></td>
+                                    <td><div style="border :1px solid black; padding 10px; text-align:center;" id="subimg">이미지<br/>준비중</div></td>
                                   </tr>
                                   <tr>
-                                    <td><div style="border :1px solid black; padding 10px;" id="subimg">이미지를 준비중입니다.</div></td>
+                                    <td><div style="border :1px solid black; padding 10px; text-align:center;" id="subimg">이미지<br/>준비중</div></td>
                                     </tr>
                                     </table>
                         </xsl:when>
@@ -117,10 +117,10 @@
                                         </p></td>
                                   </tr>
                                   <tr>
-                                    <td><div style="border :1px solid black; padding 10px;" id="subimg">이미지를 준비중입니다.</div></td>
+                                    <td><div style="border :1px solid black; padding 10px; text-align:center;" id="subimg">이미지<br/>준비중</div></td>
                                   </tr>
                                   <tr>
-                                    <td><div style="border :1px solid black; padding 10px;" id="subimg">이미지를 준비중입니다.</div></td>
+                                    <td><div style="border :1px solid black; padding 10px; text-align:center;" id="subimg">이미지<br/>준비중</div></td>
                                     </tr>
                                 </table>
                         </xsl:otherwise>
@@ -130,11 +130,14 @@
                 <h3>
                     이런 여행지는 어떠세요?
                 </h3>
-                <div id="maintable">
-                    <xsl:for-each select="web/Europe/travel[position()&lt;=3]">
+                <div style="white-space:nowrap; overflow:auto;  width:1000px; height:400px; margin: 0 auto;">
+                    <table id="maintable">
+                        <tr>
+                    <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                    <td>
                     <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
-                        <img>
+                        <img id="mainimg">
                             <xsl:attribute name="src">
                                 <xsl:value-of select="concat('./image/',picture1/@file)" />
                             </xsl:attribute>
@@ -146,11 +149,13 @@
                             </xsl:attribute>
                         </img>
                         <br />
-                        <xsl:value-of select="name" />
-                        <br />
+                        <h4><xsl:value-of select="name" /></h4>
                         <xsl:value-of select="city" />
                         </a>
+                    </td>
                     </xsl:for-each>
+                    </tr>
+                    </table>
                 </div>
             </body>
         </html>

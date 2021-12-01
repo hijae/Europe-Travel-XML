@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div style="white-space:nowrap; overflow:auto;  width:800px; height:510px; margin: 0 auto;;">
+                <div style="white-space:nowrap; overflow:auto;  width:800px; height:510px; margin: 0 auto;">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                     <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
@@ -51,9 +51,10 @@
                 <h2>
                     이달의 유럽 추천 여행지
                 </h2>
+                <div style="white-space:nowrap; overflow:auto;  width:1000px; height:400px; margin: 0 auto;">
                 <table id="maintable">
                         <tr>
-                            <xsl:for-each select="web/Europe/travel[position()&lt;=3]">
+                            <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                             <td>
                                 <a>
                                     <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
@@ -69,8 +70,7 @@
                                     </xsl:attribute>
                                 </img>
                                 <br/>
-                                <xsl:value-of select="name" />
-                                <br/>
+                                <h4><xsl:value-of select="name" /></h4>
                                 <xsl:value-of select="city" />
                             </a>
                             </td>
@@ -78,6 +78,7 @@
                         </tr>
                     
                 </table>
+                </div>
                 <hr/>
                 <h2>
                     Best 리뷰
@@ -85,7 +86,7 @@
                 <table>
                     <tr>
                 <xsl:for-each select="web/reviews/review[position()&lt;=3]">
-                <td style="width:330px">
+                <td valign="top" style="width:330px; margin: 0 auto;">
                         <h3><xsl:value-of select="travel" /></h3>
                         <h4><xsl:value-of select="name" /></h4>
                         <p>
