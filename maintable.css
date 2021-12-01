@@ -1,6 +1,6 @@
 #topMenu {
         height: 30px;
-        width: 850px;
+        width: 1000px;
 }
 #topMenu ul li {
         list-style: none;
@@ -11,18 +11,12 @@
         vertical-align: middle;
         text-align: center;
 }
-#maintable tr {
-        display: block;
-        float: left;
-}
-#maintable th, td {
-        display: block;
-}
+
 #topMenu .menuLink {
         text-decoration:none;
         color: white;
         display: block;
-        width: 150px;
+        width: 230px;
         font-size: 12px;
         font-weight: bold;
         font-family: "Trebuchet MS", Dotum, Arial;
@@ -31,12 +25,25 @@
         color: red;
         background-color: #4d4d4d;
 }
-
+#country {
+        text-decoration-line: underline;
+}
 body {
-        width: 800px;
+        width: 1000px;
         margin: 0 auto;
       }
 a {
         text-decoration-line: none;
         color: black;
+}
+h1{
+        text-align: center;
+}
+#subimg{
+        width: 100px;
+        height: auto;
+}
+#mainimg{
+        width: 300px;
+        height: auto;
 }

@@ -29,7 +29,7 @@
                         </li>
                     </ul>
                 </nav>
-                <h2>
+                <h2 id="country">
                     그리스 추천 여행지
                 </h2>
                 <table id="maintable">
@@ -40,7 +40,7 @@
                                     <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                                 <img>
                                     <xsl:attribute name="src">
-                                        <xsl:value-of select="../picture1/@file" />
+                                        <xsl:value-of select="concat('./image/',../picture1/@file)" />
                                     </xsl:attribute>
                                     <xsl:attribute name="width">
                                         <xsl:value-of select="../picture1/@w" />
@@ -60,16 +60,16 @@
                     </xsl:for-each>
                 </table>
                 <hr/>
-                <h3>
+                <h3 id="country">
                     그 외 추천 여행지
                 </h3>
                 <div id="maintable">
-                    <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                    <xsl:for-each select="web/Europe/travel[position()&lt;=3]">
                     <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                         <img>
                             <xsl:attribute name="src">
-                                <xsl:value-of select="picture1/@file" />
+                                <xsl:value-of select="concat('./image/',picture1/@file)" />
                             </xsl:attribute>
                             <xsl:attribute name="width">
                                 <xsl:value-of select="picture1/@w" />

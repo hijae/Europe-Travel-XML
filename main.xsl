@@ -36,7 +36,7 @@
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                         <img>
                             <xsl:attribute name="src">
-                                <xsl:value-of select="picture1/@file" />
+                                <xsl:value-of select="concat('./image/',picture1/@file)" />
                             </xsl:attribute>
                             <xsl:attribute name="width">
                                 <xsl:value-of select="picture1/@w" />
@@ -60,7 +60,7 @@
                                     <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
                                 <img>
                                     <xsl:attribute name="src">
-                                        <xsl:value-of select="picture1/@file" />
+                                        <xsl:value-of select="concat('./image/',picture1/@file)" />
                                     </xsl:attribute>
                                     <xsl:attribute name="width">
                                         <xsl:value-of select="picture1/@w" />
