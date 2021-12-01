@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="에펠탑.xsl" type="text/xsl"?>
+<!-- 스키마는 엔틴티기능을 제공하지 않음 -->
+<!DOCTYPE DOCUMENT [
+<!ENTITY aachener_story SYSTEM "Entity/aachener_story.ent">
+<!ENTITY eiffel_story SYSTEM "Entity/eiffel_story.ent">
+<!ENTITY alpes_story SYSTEM "Entity/alpes_story.ent">
+<!ENTITY big_ben_story SYSTEM "Entity/big_ben_story.ent">
+<!ENTITY british_museum_story SYSTEM "Entity/british_museum_story.ent">
+<!ENTITY delphi_story SYSTEM "Entity/delphi_story.ent">
+<!ENTITY london_eye_story SYSTEM "Entity/london_eye_story.ent">
+<!ENTITY ologne_story SYSTEM "Entity/ologne_story.ent">
+<!ENTITY parthenon_story SYSTEM "Entity/parthenon_story.ent">
+<!ENTITY santorini_story SYSTEM "Entity/santorini_story.ent">
+<!ENTITY seine_story SYSTEM "Entity/seine_story.ent">
+<!ENTITY tubingen_story SYSTEM "Entity/tubingen_story.ent">
+<!ENTITY versailles_story SYSTEM "Entity/versailles_story.ent">
+<!ENTITY cologne_story SYSTEM "Entity/cologne_story.ent">
+<!ENTITY tower_bridge_story SYSTEM "Entity/tower_bridge_story.ent">
+<!ENTITY stone_henge_story SYSTEM "Entity/stone_henge_story.ent">
+<!ENTITY lake_district_story SYSTEM "Entity/lake_district_story.ent">
+]>
+<web xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema/Euro_trvel.xsd">
+<Europe>
+    <travel select = "건물">
+        <name>에펠탑</name>
+        <city country="프랑스">파리</city>
+        <year>1889</year>
+        <buillder>구스타프 에펠</buillder>
+        <picture1 file = "Eiffel_Tour1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Eiffel_Tour2.jpg" w = "500" h="350"/>
+        <story>&eiffel_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>베르사유 궁전</name>
+        <city country="프랑스">베르사유</city>
+        <year>1680년대</year>
+        <buillder>앙드레 르 노트르</buillder>
+        <picture1 file = "Versailles1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Versailles2.jpg" w = "500" h="350"/>
+        <story>&versailles_story;</story>
+    </travel>
+    
+    <travel select="자연">
+        <name>센강</name>
+        <city country="프랑스">파리</city>
+        <place latitude = "북위 48° 92′ 20″" longitude= "동경 02° 12′ 32″"/>
+        <picture1 file = "Seine1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Seine2.jpg" w = "500" h="350"/>
+        <story>&seine_story;</story>
+    </travel>
+    <travel select = "건물">
+        <name>쾰른 대성당</name>
+        <city country="독일">쾰른</city>
+        <year>1322</year>
+        <buillder>게르하르트 폰 릴레</buillder>
+        <picture1 file = "Cologne_Cathedral1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Cologne_Cathedral2.jpg" w = "500" h="350"/>
+        <story>&cologne_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>아헨 대성당</name>
+        <city country="독일">아헨</city>
+        <year>796년</year>
+        <buillder>오도 오브 메츠</buillder>
+        <picture1 file = "Aachener1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Aachener2.jpg" w = "500" h="350"/>
+        <story>&aachener_story;</story>
+    </travel>
+    <travel select="자연">
+        <name>튀빙엔 마을</name>
+        <city country="독일">튀빙엔</city>
+        <place latitude = "북위 48° 52′ 36″" longitude= "동경 9° 05′ 63″"/>
+        <picture1 file = "Tubingen1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Tubingen2.jpg" w = "500" h="350"/>
+        <story>&tubingen_story;</story>
+    </travel>
+    <travel select = "건물">
+        <name>파르테논 신전</name>
+        <city country="그리스">아테네</city>
+        <year>기원전432년</year>
+        <buillder>페이디아스</buillder>
+        <picture1 file = "Parthenon1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Parthenon2.jpg" w = "500" h="350"/>
+        <story>&parthenon_story;</story>
+    </travel>
+    <travel select="자연">
+        <name>산토리니섬</name>
+        <city country="그리스">에게 해</city>
+        <place latitude = "북위 36° 25′ 2″" longitude= " 동경 25° 25′ 9″"/>
+        <picture1 file = "Santorini1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Santorini2.jpg" w = "500" h="350"/>
+        <story>&santorini_story;</story>
+    </travel>
+    <travel select = "자연">
+        <name>델포이 고고 유적</name>
+        <city country="그리스">델포이</city>
+        <place latitude = "북위 38° 28′ 53″" longitude= " 동경 22° 29′ 46″"/>
+        <picture1 file = "Delphi1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Delphi2.jpg" w = "500" h="350"/>
+        <story>&delphi_story;</story>
+    </travel>
+    <travel select = "자연">
+        <name>알프스 산</name>
+        <city country="알프스 7개국">프랑스, 스위스, 이탈리아, 오스트리아, 독일, 슬로배니아, 리히텐슈타인</city>
+        <place latitude = "북위 45° 50′ 01″" longitude= "동경 06° 51′ 54″"/>
+        <picture1 file = "Alpes1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Alpes2.jpg" w = "500" h="350"/>
+        <story>&alpes_story;</story>
+    </travel>
+    <travel select = "건물">
+        <name>빅벤</name>
+        <city country="영국">런던</city>
+        <year>1859년</year>
+        <buillder>찰스베리</buillder>
+        <picture1 file = "Big_Ben1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Big_Ben2.jpg" w = "500" h="350"/>
+        <story>&big_ben_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>런던 아이</name>
+        <city country="영국">런던</city>
+        <year>2000년</year>
+        <buillder>줄리아 바필드</buillder>
+        <picture1 file = "Londoneye1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "Londoneye2.jpg" w = "500" h="350"/>
+        <story>&london_eye_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>대영박물관</name>
+        <city country="영국">런던</city>
+        <year>1753년</year>
+        <buillder>로버트 스머크</buillder>
+        <picture1 file = "britishmuseum1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "britishmuseum2.jpg" w = "500" h="350"/>
+        <story>&british_museum_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>타워 브릿지</name>
+        <city country="영국">런던</city>
+        <year>1894년</year>
+        <buillder>호레이스 존스</buillder>
+        <picture1 file = "towerbridge1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "towerbridge2.jpg" w = "500" h="350"/>
+        <story>&tower_bridge_story;</story>
+    </travel>
+    <travel select="건물">
+        <name>스톤헨지</name>
+        <city country="영국">런던</city>
+        <year>기원전 2000년</year>
+        <buillder>윈드밀힐 문화인</buillder>
+        <picture1 file = "stonhenge1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "stonhenge2.jpg" w = "500" h="350"/>
+        <story>&stone_henge_story;</story>
+    </travel>
+    <travel select="자연">
+        <name>레이크 디스트릭스</name>
+        <city country="영국">잉글랜드</city>
+        <place latitude = "북위 54° 57′ 51″" longitude= " 동경 -3° 14′ 54″"/>
+        <picture1 file = "lakedistrict1.jpg" w = "1000" h = "300"/>
+        <picture2 file = "lakedistrict2.jpg" w = "500" h="350"/>
+        <story>&lake_district_story;</story>
+    </travel>
+</Europe>
+<reviews>
+  <review>
+    <id>1</id>
+    <name>민준</name>
+    <text>파리여행은 에펠탑으로 시작해서 에펠탑으로 끝난다는데 정말 별거 없는 파리였지만 에펠탑이 너무 별거라 이거 하나로 충분했던 곳.
+        에펠탑에 대한 환상이 있지도 않았는데 보는 순간 감동적이기까지 했어요.
+        왜 낭만의 도시라 하는지. 왜 파리 사람들이 일을 안 하는지. 전부 이해가 갔습니다.
+        도시 분위기가 사람들에게 큰 영향을 미치는 것 같아요. 빌딩 숲 속에서 바쁘게 살아가는 서울 사람들처럼. 에펠탑 아래에서 피크닉하며 이상 속에 사는 파리 사람처럼.</text>
+    <travel>에펠탑</travel>
+  </review>
+  <review>
+    <id>2</id>
+    <name>서연</name>
+    <text>중등딸이 두번의 런던여행중 가장 좋아다는 스톤헨지.
+        드넓은 평원에 우뚝솟아 있는 스톤헨지.
+        누가 어떻게 만들었는지 아직도 의견분분하지만 그 웅장함과 왠지모를 경건함은 또 다른 영국을 경험하기에 충분하다</text>
+    <travel>스톤헨지</travel>
+  </review>
+  <review>
+    <id>3</id>
+    <name>지우</name>
+    <text>중등딸이 두번의 런던여행중 가장 좋아다는 스톤헨지.
+        드넓은 평원에 우뚝솟아 있는 스톤헨지.
+        누가 어떻게 만들었는지 아직도 의견분분하지만 그 웅장함과 왠지모를 경건함은 또 다른 영국을 경험하기에 충분하다</text>
+    <travel>산토리니섬</travel>
+  </review>
+</reviews>
+</web>
