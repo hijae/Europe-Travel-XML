@@ -35,7 +35,7 @@
                                 </div>
                                 <div id="divbody">
                                     <div style="white-space:nowrap; overflow:auto;  width:95%; margin: 0 auto;">
-                <xsl:for-each select="web/Europe/travel[name='퀼른 대성당']">
+                <xsl:for-each select="web/Europe/travel[name='쾰른 대성당']">
                     <xsl:choose>
                         <xsl:when test="@select='건물'">
                             <table>
