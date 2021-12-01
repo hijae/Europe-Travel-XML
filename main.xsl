@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div style="white-space:nowrap; overflow:auto;  width:600px; height:400px; margin: 0 auto;;">
+                <div style="white-space:nowrap; overflow:auto;  width:800px; height:510px; margin: 0 auto;;">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                     <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
@@ -82,15 +82,19 @@
                 <h2>
                     Best 리뷰
                 </h2>
-                <xsl:for-each select="web/reviews/review[position()&lt;=2]">
-                    <p>
-                        <xsl:value-of select="name" />
-                        <br/>
-                        <xsl:value-of select="travel" />
-                        <br/>
+                <table>
+                    <tr>
+                <xsl:for-each select="web/reviews/review[position()&lt;=3]">
+                <td style="width:330px">
+                        <h3><xsl:value-of select="travel" /></h3>
+                        <h4><xsl:value-of select="name" /></h4>
+                        <p>
                         <xsl:value-of select="text" />
                     </p>
+                    </td>
                 </xsl:for-each>
+                </tr>
+                </table>
             </body>
         </html>
     </xsl:template>
