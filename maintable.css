@@ -1,7 +1,6 @@
 #topMenu {
         height: 30px;
         width: 100%;
-        margin: 0 auto;
         background-color: #505050;
 }
 #topMenu ul li {
@@ -11,16 +10,16 @@
         line-height: 30px;
         vertical-align: middle;
         text-align: center;
+        width: 25%;
         margin: 0 auto;
 }
 #topMenu .menuLink {
         text-decoration:none;
         color: white;
         display: block;
-        width: 340px;
+        width: 50%;
         font-size: 18px;
         font-weight: bold;
-        font-family: "Trebuchet MS", Dotum, Arial;
         margin: 0 auto;
 }
 #topMenu .menuLink:hover {
