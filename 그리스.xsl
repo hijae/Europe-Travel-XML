@@ -36,7 +36,7 @@
                 <h2 id="country">
                     그리스 추천 여행지
                 </h2>
-                <div style="white-space:nowrap; overflow:auto;  width:1200px; height:510px; margin: 0 auto;">
+                <div style="white-space:nowrap; overflow:auto;  width:90%; height:510px; margin: 0 auto;">
                 <table id="maintable">
                         <tr>
                             <xsl:for-each select="web/Europe/travel/city[@country = '그리스']">
@@ -68,7 +68,7 @@
                 <h3 id="country">
                     그 외 추천 여행지
                 </h3>
-                <div style="white-space:nowrap; overflow:auto;  width:1200px; height:400px; margin: 0 auto;">
+                <div style="white-space:nowrap; overflow:auto;  width:90%; height:400px; margin: 0 auto;">
                     <table id="maintable">
                         <tr>
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
