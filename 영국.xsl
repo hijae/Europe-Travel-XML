@@ -42,7 +42,7 @@
                             <xsl:for-each select="web/Europe/travel/city[@country = '영국']">
                             <td>
                                 <a>
-                                    <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
+                                    <xsl:attribute name="href"><xsl:value-of select="concat('./',../name,'.xml')" /></xsl:attribute>
                                 <img id="mainimg">
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="concat('./image/',../picture1/@file)" />
