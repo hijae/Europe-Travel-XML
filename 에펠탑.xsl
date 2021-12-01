@@ -11,25 +11,28 @@
                 </title>
             </head>
             <body>
-                <h1><a href="Euro_travel.xml"><img src="ui/main.jpg" width="50" height="50" />
-                    유럽 추천 여행지
-                                    </a></h1>
-                <nav id="topMenu">
-                    <ul>
-                        <li>
-                            <a class="menuLink" href="./그리스.xml">그리스</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="./영국.xml">영국</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="./프랑스.xml">프랑스</a>
-                        </li>
-                        <li>
-                            <a class="menuLink" href="./독일.xml">독일</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div id="divhead">
+                    <a href="Euro_travel.xml"><h1 id="h1head"><img src="ui/main.png" width="50" height="50"/>
+                유럽 추천 여행지
+                                </h1>
+                            </a>
+                                <nav id="topMenu">
+                                    <ul>
+                                        <li>
+                                            <a class="menuLink" href="./그리스.xml">그리스</a>
+                                        </li>
+                                        <li>
+                                            <a class="menuLink" href="./영국.xml">영국</a>
+                                        </li>
+                                        <li>
+                                            <a class="menuLink" href="./프랑스.xml">프랑스</a>
+                                        </li>
+                                        <li>
+                                            <a class="menuLink" href="./독일.xml">독일</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                </div>
                 <xsl:for-each select="web/Europe/travel[name='센강']">
                     <xsl:choose>
                         <xsl:when test="@select='건물'">

@@ -1,37 +1,34 @@
 #topMenu {
         height: 30px;
-        width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #505050;
 }
 #topMenu ul li {
         list-style: none;
-        color: white;
-        background-color: #2d2d2d;
+        color: black;
         float: left;
         line-height: 30px;
         vertical-align: middle;
         text-align: center;
 }
-
 #topMenu .menuLink {
         text-decoration:none;
         color: white;
         display: block;
-        width: 240px;
-        font-size: 12px;
+        width: 340px;
+        font-size: 18px;
         font-weight: bold;
         font-family: "Trebuchet MS", Dotum, Arial;
 }
 #topMenu .menuLink:hover {
-        color: red;
-        background-color: #4d4d4d;
+        color: white;
+        background-color: #404040;
 }
 #country {
         text-decoration-line: underline;
 }
-body {
-        width: 1000px;
-        margin: 0 auto;
-      }
+
 a {
         text-decoration-line: none;
         color: black;
@@ -48,7 +45,7 @@ h1{
         height: 270px;
 }
 #scrimg{
-        width: auto;
+        width: 100%;
         height: 500px;
 }
 
@@ -57,4 +54,20 @@ h1{
 }
 img {
         border-radius: 4px;
+}
+#maintext{
+        font-size: 20px;
+        font-family: "Trebuchet MS", Dotum, Arial;
+}
+#divbody {
+        width: 1200px;
+        margin: 0 auto;
+        
+}
+#divhead{
+        background-color: #303030;
+        color: white;
+}
+#h1head{
+        color: white;
 }

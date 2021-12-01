@@ -11,9 +11,11 @@
                 </title>
             </head>
             <body>
-                <h1><a href="Euro_travel.xml"><img src="ui/main.jpg" width="50" height="50" />
+<div id="divhead">
+    <a href="Euro_travel.xml"><h1 id="h1head"><img src="ui/main.png" width="50" height="50"/>
 유럽 추천 여행지
-                </a></h1>
+                </h1>
+            </a>
                 <nav id="topMenu">
                     <ul>
                         <li>
@@ -30,7 +32,8 @@
                         </li>
                     </ul>
                 </nav>
-                <div style="white-space:nowrap; overflow:auto;  width:800px; height:510px; margin: 0 auto;">
+                </div>
+                <div style="white-space:nowrap; overflow:auto;  width:100%; height:510px; margin: 0 auto;">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                     <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
@@ -48,6 +51,7 @@
                     </a>
                     </xsl:for-each>
                 </div>
+                <div id="divbody">
                 <h2>
                     이달의 유럽 추천 여행지
                 </h2>
@@ -86,7 +90,7 @@
                 <table>
                     <tr>
                 <xsl:for-each select="web/reviews/review[position()&lt;=3]">
-                <td valign="top" style="width:330px; margin: 0 auto;">
+                <td valign="top" style="width:400px; margin: 0 auto;">
                         <h3><xsl:value-of select="travel" /></h3>
                         <h4><xsl:value-of select="name" /></h4>
                         <p>
@@ -96,6 +100,7 @@
                 </xsl:for-each>
                 </tr>
                 </table>
+                </div>
             </body>
         </html>
     </xsl:template>
