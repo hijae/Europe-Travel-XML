@@ -34,7 +34,7 @@
                                 </nav>
                                 </div>
                                 <div id="divbody">
-                <xsl:for-each select="web/Europe/travel[name='센강']">
+                <xsl:for-each select="web/Europe/travel[name='에펠탑']">
                     <xsl:choose>
                         <xsl:when test="@select='건물'">
                             <table>
@@ -134,7 +134,7 @@
                 <h3>
                     이런 여행지는 어떠세요?
                 </h3>
-                <div style="white-space:nowrap; overflow:auto;  width:90%; height:400px; margin: 0 auto;">
+                <div style="white-space:nowrap; overflow:auto;  width:95%; height:400px; margin: 0 auto;">
                     <table id="maintable">
                         <tr>
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
