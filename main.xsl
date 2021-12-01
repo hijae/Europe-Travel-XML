@@ -87,7 +87,7 @@
                 <h2>
                     Best 리뷰
                 </h2>
-                <table>
+                <table border="10">
                     <tr>
                 <xsl:for-each select="web/reviews/review[position()&lt;=3]">
                 <td valign="top" style="width:400px; margin: 0 auto;">
