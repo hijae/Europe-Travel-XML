@@ -30,20 +30,20 @@
                         </li>
                     </ul>
                 </nav>
-                <div id="mainimg">
+                <div style="white-space:nowrap; overflow:auto;  width:600px; height:400px; margin: 0 auto;;">
                     <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                     <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
-                        <img>
+                        <img id="scrimg">
                             <xsl:attribute name="src">
-                                <xsl:value-of select="concat('./image/',picture1/@file)" />
-                            </xsl:attribute>
-                            <xsl:attribute name="width">
-                                <xsl:value-of select="picture1/@w" />
-                            </xsl:attribute>
-                            <xsl:attribute name="height">
-                                <xsl:value-of select="picture1/@h" />
-                            </xsl:attribute>
+                                        <xsl:value-of select="concat('./image/',picture1/@file)" />
+                                    </xsl:attribute>
+                                    <xsl:attribute name="width">
+                                        <xsl:value-of select="concat('./image/',picture1/@w)" />
+                                    </xsl:attribute>
+                                    <xsl:attribute name="height">
+                                        <xsl:value-of select="concat('./image/',picture1/@h)" />
+                                    </xsl:attribute>
                         </img>
                     image
                     </a>
@@ -53,31 +53,32 @@
                     이달의 유럽 추천 여행지
                 </h2>
                 <table id="maintable">
-                    <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
+                    
                         <tr>
+                            <xsl:for-each select="web/Europe/travel[position()&lt;=4]">
                             <td>
                                 <a>
                                     <xsl:attribute name="href"><xsl:value-of select="concat('./',name,'.xml')" /></xsl:attribute>
-                                <img>
+                                <img id="mainimg">
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="concat('./image/',picture1/@file)" />
                                     </xsl:attribute>
                                     <xsl:attribute name="width">
-                                        <xsl:value-of select="picture1/@w" />
+                                        <xsl:value-of select="concat('./image/',picture1/@w)" />
                                     </xsl:attribute>
                                     <xsl:attribute name="height">
-                                        <xsl:value-of select="picture1/@h" />
+                                        <xsl:value-of select="concat('./image/',picture1/@h)" />
                                     </xsl:attribute>
                                 </img>
-                    image
                                 <br/>
                                 <xsl:value-of select="name" />
                                 <br/>
                                 <xsl:value-of select="city" />
                             </a>
                             </td>
+                        </xsl:for-each>
                         </tr>
-                    </xsl:for-each>
+                    
                 </table>
                 <hr/>
                 <h2>
