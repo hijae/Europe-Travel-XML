@@ -87,10 +87,10 @@
                 <h2>
                     Best 리뷰
                 </h2>
-                <table border="10">
+                <table border="10" align="center">
                     <tr>
                 <xsl:for-each select="web/reviews/review[position()&lt;=3]">
-                <td valign="top" style="width:400px; margin: 0 auto;">
+                <td valign="top" style="width:33%; margin: 0 auto;">
                         <h3><xsl:value-of select="travel" /></h3>
                         <h4><xsl:value-of select="name" /></h4>
                         <p>
@@ -101,6 +101,7 @@
                 </tr>
                 </table>
                 </div>
+                <br/>
             </body>
             <footer>
                 <div style="float:left;">
