@@ -51,3 +51,7 @@ h1{
         width: auto;
         height: 400px;
 }
+
+#maintable{
+        border-spacing: 20px;
+}
