@@ -34,6 +34,7 @@
                                 </nav>
                                 </div>
                                 <div id="divbody">
+                                    <div style="white-space:nowrap; overflow:auto;  width:95%; margin: 0 auto;">
                 <xsl:for-each select="web/Europe/travel[name='에펠탑']">
                     <xsl:choose>
                         <xsl:when test="@select='건물'">
@@ -130,6 +131,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
+            </div>
                 <hr/>
                 <h3>
                     이런 여행지는 어떠세요?
