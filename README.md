@@ -10,10 +10,10 @@
 주제 : 유럽 추천 여행지
 1. 주제를 선택한 이유 : 단계적 일상회복으로 인한 여행이 활성화 됨에따라 유럽 추천 여행지를 소개해주는 웹페이지의 수요를 충족하고자 만들게 되었다.
 
-2. xml 데이터 트리구조 : 
-![image](https://user-images.githubusercontent.com/75216723/144259005-d97f4f23-48a7-4981-992d-b93be53b536f.png)
+2. xml 데이터 트리구조 :
+발표 PPT 참고
 
-3. 와이어프레임 (프로토 타입 포함)
+4. 와이어프레임 (프로토 타입 포함)
 https://www.figma.com/file/Ni2FCfraUktpwEoD9S9iWZ/Team-Xml?node-id=15%3A2
 
 4. 조원 각각의 역할과 스케줄 :
