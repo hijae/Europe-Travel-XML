@@ -17,10 +17,15 @@
 https://www.figma.com/file/Ni2FCfraUktpwEoD9S9iWZ/Team-Xml?node-id=15%3A2
 
 4. 조원 각각의 역할과 스케줄 :
+
     조장 : 송희재 
+    
     역할 : 데이터수집 및 XML 작성, XSL 작성
+    
     조원 : 이정범
+    
     역할 : Entity생성 및 Schema작성, 와이어프레임작성, XML 데이터 트리구조 작성
+
 
 링크
 https://rb.gy/qmibj2
