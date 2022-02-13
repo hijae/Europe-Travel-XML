@@ -28,4 +28,4 @@ https://www.figma.com/file/Ni2FCfraUktpwEoD9S9iWZ/Team-Xml?node-id=15%3A2
 
 
 링크
-https://rb.gy/qmibj2
+https://europe-travel-xml.pages.dev/Euro_travel.xml
